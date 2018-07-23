@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>十滴水</title>
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body ng-app="myApp" ng-controller="gameCtrl" >
+    <h2 >十滴水游戏</h2>
+    <div class="gamebody">
+        <table class="game" border="3">
+            <tr ng-repeat="line in gameArr" >
+                <td ng-repeat="list in line track by $index" ng-click="clickConfig($parent.$index,$index)">
+                    <span class="drip drip-{{list}}"></span>
+                </td>
+            </tr>
+        </table>
+        <div>{{clicktime}}</div>
+    </div>
+    <div class="gameinfo">
+        <div class="dot">
+            剩余点数：<br><span>{{dots}}</span>
+        </div>
+        <div class="level">
+            关卡：<br><span>{{level}}</span>
+        </div>
+    </div>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

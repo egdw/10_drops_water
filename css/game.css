@@ -1,0 +1,62 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+div,tr,td{
+    margin: 0;
+    padding: 0;
+}
+
+.game{
+    height: 18em;
+    width: 18em;
+}
+
+.game tr td{
+    width: 16.6%;
+    height: 16.6%;
+    background: #ccc;
+    text-align: center;
+}
+
+.game .drip{
+    line-height: 100%;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.drip-4{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: #2c13ff;
+}
+.drip-3{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    background: #3c7eff;
+}
+.drip-2{
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    background: #37afff;
+}
+.drip-1{
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+    background: #10f8ff;
+}
+
+.gameinfo{
+    position: absolute;
+    top: 5em;
+    right: 0;
+    font-size: 18px;
+}
